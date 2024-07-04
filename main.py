@@ -35,6 +35,7 @@ def add_post():
     my_posts=post(title,description,author)
     db.session.add(my_posts)
     db.session.commit()
+    print("this kis wor")
     return post_schema.jsonify(my_posts)
 
 
